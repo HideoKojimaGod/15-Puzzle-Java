@@ -3,11 +3,11 @@ package com.company;
 import java.util.HashMap;
 import java.util.ArrayList;
 import java.util.Random;
-import java.util.logging.*;
+
 
 public class Puzzle implements IPlayable {
-    private Integer[][] frame;
-    private Integer SizeOfFrame;
+    protected Integer[][] frame;
+    protected Integer SizeOfFrame;
     protected HashMap<Integer, Position> positions;
     public Puzzle(int... numberedSquare)
     {
@@ -43,6 +43,7 @@ public class Puzzle implements IPlayable {
     {
         return positions.get(value);
     }
+
     public void Shift(Integer value)
     {
         try
