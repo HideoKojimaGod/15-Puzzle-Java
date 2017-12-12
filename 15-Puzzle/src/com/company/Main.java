@@ -10,7 +10,10 @@ public class Main {
         game.Shift(15);
         game.Randomize();
         //Console.WriteLine(game.GetAllHistory().Count);
+        game.GetAllHistory();
+
         ConsoleGameUI c = new ConsoleGameUI(game);
         c.StartGame();
+
     }
 }
